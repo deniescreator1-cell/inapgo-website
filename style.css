@@ -1,0 +1,199 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #263447;
+}
+
+.header {
+  background: #0756a5;
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  margin-bottom: 0;
+}
+
+.hero {
+  background: #e5f2ff;
+  padding: 28px 16px;
+  text-align: center;
+}
+
+.search-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  max-width: 520px;
+  margin: 20px auto 0;
+  text-align: left;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 7px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd5df;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  background: #0875d1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 14px;
+  width: 100%;
+}
+
+.promos, .hotels {
+  padding: 22px 16px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.promo-card {
+  background: white;
+  padding: 18px;
+  margin: 14px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.promo-card strong {
+  display: block;
+  padding: 12px;
+  background: #f0f4f9;
+  border: 1px dashed #0875d1;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.agoda {
+  border-left: 5px solid #0875d1;
+}
+
+.reddoorz {
+  border-left: 5px solid #e65353;
+}
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 15px;
+}
+
+.hotel-info h3 {
+  margin-top: 0;
+}
+
+.hotel-info a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 11px;
+  color: white;
+  background: #0875d1;
+  border-radius: 7px;
+  margin-top: 9px;
+}
+
+.hotel-info a:last-child {
+  background: #df4949;
+}
+
+footer {
+  background: #123451;
+  color: white;
+  text-align: center;
+  padding: 25px 12px;
+  margin-top: 25px;
+}
+
+/* TAMPILAN MOBILE INAPGO */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 12px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 24px 12px;
+  }
+
+  .search-box {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .dates {
+    grid-template-columns: 1fr;
+  }
+
+  .promos, .hotels {
+    padding: 18px 12px;
+  }
+
+  .hotel-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-card img {
+    height: 190px;
+  }
+
+  button {
+    min-height: 46px;
+    font-size: 15px;
+  }
+}
