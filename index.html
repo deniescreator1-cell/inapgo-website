@@ -1,0 +1,77 @@
+
+<link rel="stylesheet" href="style.css">
+
+<header class="header">
+  <h1>🏨 InapGo</h1>
+  <p>Cari Hotel, Temukan Harga Terbaik!</p>
+</header>
+
+<section class="hero">
+  <h2>Mau Menginap di Mana?</h2>
+  <p>Temukan hotel terbaik untuk perjalananmu.</p>
+
+  <div class="search-box">
+    <label>Tujuan atau nama hotel</label>
+    <input id="destination" placeholder="Contoh: Jogja, Bali, Jakarta">
+
+    <div class="dates">
+      <div>
+        <label>Check-in</label>
+        <input type="date" id="checkin">
+      </div>
+      <div>
+        <label>Check-out</label>
+        <input type="date" id="checkout">
+      </div>
+    </div>
+
+    <label>Jumlah tamu</label>
+    <select id="guests">
+      <option>1 Tamu</option>
+      <option selected>2 Tamu</option>
+      <option>3 Tamu</option>
+      <option>4 Tamu</option>
+      <option>5 Tamu</option>
+    </select>
+
+    <button onclick="searchHotels()">CARI HOTEL</button>
+  </div>
+</section>
+
+<section class="promos">
+  <h2>🎁 Promo Spesial InapGo</h2>
+
+  <div class="promo-card agoda">
+    <h3>Promo Agoda</h3>
+    <p>Gunakan kode promo Agoda Anda.</p>
+    <strong id="agodaCode">STAYWITHME</strong>
+    <button onclick="copyPromo('agodaCode')">
+      Salin Kode Agoda
+    </button>
+  </div>
+
+  <div class="promo-card reddoorz">
+    <h3>Promo RedDoorz</h3>
+    <p>Gunakan kode promo RedDoorz Anda.</p>
+    <strong id="reddoorzCode">YUKZCHECKIN</strong>
+    <button onclick="copyPromo('reddoorzCode')">
+      Salin Kode RedDoorz
+    </button>
+  </div>
+</section>
+
+<section class="hotels">
+  <h2>Rekomendasi Hotel</h2>
+  <p id="resultInfo">Pilihan hotel untuk perjalanan Anda.</p>
+  <div id="hotelList" class="hotel-list"></div>
+</section>
+
+<footer>
+  <h2>InapGo</h2>
+  <p>Temukan Penginapan Favoritmu.</p>
+  <small>© 2026 InapGo. Informasi hotel merupakan contoh.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
